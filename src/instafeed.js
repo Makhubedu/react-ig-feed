@@ -60,7 +60,6 @@ class InstagramFeed extends Component {
     } else if (!isLoaded) {
       return <div> Loading... </div>;
     } else {
-        console.log(feeds);
       return (
         <div className={styles.instagramItems}>
           {feeds.slice(0, this.props.counter).map((feed, index) => (
